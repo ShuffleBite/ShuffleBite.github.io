@@ -10,13 +10,11 @@ body {
 }
 
 img {
-  width: 15rem;
-  height: 15rem;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.3rem;
 }
 
 .inputs {
@@ -79,28 +77,20 @@ img {
   text-decoration: underline;
 }
 
+#container {
+  position: absolute;
+  top: 20rem;
+  left: 40%;
+}
+
 #choice1 {
-  border-radius: 5px;
-  width: 7rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  display: inline-block;
+  position: static;
 }
 
 #choice2 {
-  border-radius: 5px;
-  width: 7rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  display: inline-block;
+  position: static;
 }
 
 #price1 {
