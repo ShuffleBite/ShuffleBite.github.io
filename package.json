@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.1",
+    "proxy": "^1.0.2"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "shufflebite",
+  "description": "A website node.js app that decides a restaurant for indecisive users through various modes.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [
+    "node",
+    "web",
+    "restraurant",
+    "random",
+    "choice"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ShuffleByte</title>
+    <link rel="icon" type="image/png" href="shuffle_bite.png"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="fontsheet" href="https://fonts.googleapis.com/css?family=Concert+One" />
+  </head>
+  <body>
+    <img src="shuffle_bite.png" alt="ShuffleByte Logo">
+    <!-- <h1 id="title">ShuffleByte</h1> -->
+
+    <div id="user-inputs">
+      <p>Enter your city or zipcode:</p>
+      <input id="location" class="inputs"/>
+      <div id="location-err">
+        <div id="l-err" style="color:red;"></div>
+      </div>
+
+      <p>Choose your price range:</p>
+      <button id="price1" class="inputs" value="1">$</button>
+      <button id="price2" class="inputs" value="2">$$</button>
+      <button id="price3" class="inputs" value="3">$$$</button>
+      <button id="price4" class="inputs" value="4">$$$$</button>
+      <div id="price-err">
+        <div id="p-err" style="color:red;"></div>
+      </div>
+
+      <p>Choose your preferred location type:</p>
+      <select id="food-types" class="inputs">
+        <option id="random" value="random">Random Option</option>
+        <option id="breakfast-brunch" value="breakfast_brunch">Breakfast & Brunch</option>
+        <option id="diners" value="diners">Diners</option>
+        <option id="sandwiches" value="sandwiches">Sandwiches</option>
+        <option id="hot-dogs" value="hotdogs">Hot Dogs</option>
+        <option id="burgers" value="burgers">Burgers</option>
+	      <option id="pizza" value="pizza">Pizza</option>
+        <option id="barbeque" value="bbq">Barbeque</option>
+        <option id="seafood" value="seafood">Seafood</option>
+        <option id="steakhouses" value="steakhouses">Steakhouses</option>
+        <option id="vegetarian" value="vegetarian">Vegetarian</option>
+        <option id="vegan" value="vegan">Vegan</option>
+        <option id="poke" value="poke">Poke</option>
+        <option id="southern" value="southern">Southern</option>
+        <option id="soul-food" value="soulfood">Soul Food</option>
+        <option id="cajun-creole" value="cajun">Cajun/Creole</option>
+        <option id="comfort-food" value="comfortfood">Comfort Food</option>
+        <option id="tex-mex" value="tex-mex">Tex-Mex</option>
+        <option id="latin-american" value="latin">Latin American</option>
+        <option id="mexican" value="mexican">Mexican</option>
+        <option id="colombian" value="colombian">Colombian</option>
+        <option id="brazilian" value="brazilian">Brazilian</option>
+        <option id="peruvian" value="peruvian">Peruvian</option>
+        <option id="dominican" value="dominican">Dominican</option>
+        <option id="puerto-rican" value="puertorican">Puerto Rican</option>
+        <option id="venezuelan" value="venezuelan">Venezuelan</option>
+        <option id="cuban" value="cuban">Cuban</option>
+        <option id="tacos" value="tacos">Tacos</option>
+        <option id="haitian" value="haitian">Haitian</option>
+        <option id="spanish" value="spanish">Spanish</option>
+        <option id="italian" value="italian">Italian</option>
+        <option id="french" value="french">French</option>
+        <option id="mediterranean" value="mediterranean">Mediterranean</option>
+        <option id="middle-eastern" value="mideastern">Middle Eastern</option>
+        <option id="greek" value="greek">Greek</option>
+        <option id="halal" value="halal">Halal</option>
+        <option id="indian" value="indian">Indian</option>
+        <option id="chinese" value="chinese">Chinese</option>
+        <option id="japanese" value="japanese">Japanese</option>
+        <option id="korean" value="korean">Korean</option>
+        <option id="vietnamese" value="vietnamese">Vietnamese</option>
+        <option id="thai" value="thai">Thai</option>
+        <option id="ramen" value="ramen">Ramen</option>
+        <option id="noodles" value="noodles">Noodles</option>
+        <option id="asian-fusion" value="asianfusion">Asian Fusion</option>
+        <option id="coffee-tea" value="coffee">Coffee & Tea</option>
+        <option id="cafes" value="cafes">Cafes</option>
+        <option id="desserts" value="desserts">Desserts</option>
+        <option id="bakeries" value="bakeries">Bakeries</option>
+        <option id="ice-cream" value="icecream">Ice Cream & Frozen Yogurt</option>
+      </select>
+      <br />
+      <button id="food-finder" class="inputs">Find Restaurant</button>
+    </div>
+
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="script.js?v=1.0.0"></script>
+  </body>
+</html>
