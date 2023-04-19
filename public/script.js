@@ -1,5 +1,8 @@
 import { getRestaurants } from "./food_finder.js";
-import { setChoices, getRandomInt } from "./utils.js";
+import { setChoices, getRandomInt, deleteAllCookies } from "./utils.js";
+
+deleteAllCookies();
+console.log(document.cookie);
 
 const types = ['brewery',
                'bubble-tea',
@@ -26,65 +29,65 @@ function getRandomType() {
 let onPriceButtonClick1 = function () {
   price_button_pressed = price_button1.value;
 
-  price_button1.style.backgroundColor = "#212529";
-  price_button1.style.color = "#fff";
+  price_button1.style.backgroundColor = "#5f471f";
+  price_button1.style.color = "#ecd0a1";
 
-  price_button2.style.backgroundColor = "#fff";
-  price_button2.style.color = "#212529";
+  price_button2.style.backgroundColor = "#ecd0a1";
+  price_button2.style.color = "#5f471f";
 
-  price_button3.style.backgroundColor = "#fff";
-  price_button3.style.color = "#212529";
+  price_button3.style.backgroundColor = "#ecd0a1";
+  price_button3.style.color = "#5f471f";
 
-  price_button4.style.backgroundColor = "#fff";
-  price_button4.style.color = "#212529";
+  price_button4.style.backgroundColor = "#ecd0a1";
+  price_button4.style.color = "#5f471f";
 };
 
 let onPriceButtonClick2 = function () {
   price_button_pressed = price_button2.value;
 
-  price_button1.style.backgroundColor = "#fff";
-  price_button1.style.color = "#212529";
+  price_button1.style.backgroundColor = "#ecd0a1";
+  price_button1.style.color = "#5f471f";
 
-  price_button2.style.backgroundColor = "#212529";
-  price_button2.style.color = "#fff";
+  price_button2.style.backgroundColor = "#5f471f";
+  price_button2.style.color = "#ecd0a1";
 
-  price_button3.style.backgroundColor = "#fff";
-  price_button3.style.color = "#212529";
+  price_button3.style.backgroundColor = "#ecd0a1";
+  price_button3.style.color = "#5f471f";
 
-  price_button4.style.backgroundColor = "#fff";
-  price_button4.style.color = "#212529";
+  price_button4.style.backgroundColor = "#ecd0a1";
+  price_button4.style.color = "#5f471f";
 };
 
 let onPriceButtonClick3 = function () {
   price_button_pressed = price_button3.value;
 
-  price_button1.style.backgroundColor = "#fff";
-  price_button1.style.color = "#212529";
+  price_button1.style.backgroundColor = "#ecd0a1";
+  price_button1.style.color = "#5f471f";
 
-  price_button2.style.backgroundColor = "#fff";
-  price_button2.style.color = "#212529";
+  price_button2.style.backgroundColor = "#ecd0a1";
+  price_button2.style.color = "#5f471f";
 
-  price_button3.style.backgroundColor = "#212529";
-  price_button3.style.color = "#fff";
+  price_button3.style.backgroundColor = "#5f471f";
+  price_button3.style.color = "#ecd0a1";
 
-  price_button4.style.backgroundColor = "#fff";
-  price_button4.style.color = "#212529";
+  price_button4.style.backgroundColor = "#ecd0a1";
+  price_button4.style.color = "#5f471f";
 };
 
 let onPriceButtonClick4 = function () {
   price_button_pressed = price_button4.value;
 
-  price_button1.style.backgroundColor = "#fff";
-  price_button1.style.color = "#212529";
+  price_button1.style.backgroundColor = "#ecd0a1";
+  price_button1.style.color = "#5f471f";
 
-  price_button2.style.backgroundColor = "#fff";
-  price_button2.style.color = "#212529";
+  price_button2.style.backgroundColor = "#ecd0a1";
+  price_button2.style.color = "#5f471f";
 
-  price_button3.style.backgroundColor = "#fff";
-  price_button3.style.color = "#212529";
+  price_button3.style.backgroundColor = "#ecd0a1";
+  price_button3.style.color = "#5f471f";
 
-  price_button4.style.backgroundColor = "#212529";
-  price_button4.style.color = "#fff";
+  price_button4.style.backgroundColor = "#5f471f";
+  price_button4.style.color = "#ecd0a1";
 };
 
 let onFoodButtonClick = async function () {
@@ -112,8 +115,6 @@ let onFoodButtonClick = async function () {
   location_container.appendChild(location_content);
   price_container.appendChild(price_content);
 
-  console.log(location_container);
-
   if (price_button_pressed === undefined || info['location'] === '')
   {
     if (info['location'] === '')
@@ -123,6 +124,9 @@ let onFoodButtonClick = async function () {
   }
   else
   {
+    location_content.innerHTML = "";
+    price_content.innerHTML = "";
+    
     const restaurants = await getRestaurants(
       info.location,
       info.type,
@@ -130,8 +134,8 @@ let onFoodButtonClick = async function () {
     );
   
     setChoices(restaurants);
-  
-    console.log(restaurants);
+    
+    //console.log(restaurants);
   
     window.location.href = "choices.html";
   }

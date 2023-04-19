@@ -25,10 +25,10 @@ img {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #5f471f;
+  background-color: #ecd0a1;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 3px solid;
   border-radius: 0.25rem;
   text-align: center;
 }
@@ -36,9 +36,9 @@ img {
 #random {
   border-radius: 5px;
   width: 8rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
+  color: #5f471f;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -70,17 +70,25 @@ img {
   font-size: 3rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  background-color: #ecd0a1;
+  color: #5f471f;
+  border-color: #5f471f;
   text-align: center;
   margin-top: 10rem;
-  margin-bottom: 1rem;
-  text-decoration: underline;
+  margin-bottom: 1.5rem;
+  width: 20rem;
+  border: 3px solid;
+  border-radius: 1rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #container {
   position: absolute;
-  top: 20rem;
-  left: 40%;
+  width: 300px;
+  top: 35%;
+  left: 39%;
 }
 
 #choice1 {
@@ -95,48 +103,52 @@ img {
 
 #price1 {
   display: inline-block;
+  text-align: center;
   border-radius: 5px;
   width: 3.75rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
+  color: #5f471f;
   position: static;
 }
 
 #price2 {
   display: inline-block;
+  text-align: center;
   border-radius: 5px;
   width: 3.75rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
+  color: #5f471f;
   position: static;
 }
 
 #price3 {
   display: inline-block;
+  text-align: center;
   border-radius: 5px;
   width: 3.75rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
+  color: #5f471f;
   position: static;
 }
 
 #price4 {
   display: inline-block;
+  text-align: center;
   border-radius: 5px;
   width: 3.75rem;
-  background-color: #fff;
-  border-color: #212529;
-  color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
+  color: #5f471f;
   position: static;
 }
 
 #location {
   border-radius: 5px;
-  background-color: #fff;
-  border-color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -145,8 +157,8 @@ img {
 
 #food-types {
   border-radius: 5px;
-  background-color: #fff;
-  border-color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
   width: 15rem;
   position: relative;
   margin-left: auto;
@@ -155,8 +167,8 @@ img {
 
 #food-finder {
   border-radius: 5px;
-  background-color: #fff;
-  border-color: #212529;
+  background-color: #ecd0a1;
+  border-color: #5f471f;
   width: 10rem;
   margin-top: 2rem;
   text-align: center;

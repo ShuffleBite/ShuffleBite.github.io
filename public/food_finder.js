@@ -1,16 +1,7 @@
 import { getRandomInt } from './utils.js';
 
-let apiKey;
-
-fetch('/env')
-  .then(response => response.text())
-  .then(envVariable => {
-    apiKey = envVariable;
-  });
-
-
+const apiKey = 'xZ0cLdAEVKLV2pXTRMEMgVuqwiYg37B04gcGsT-rWytPlm9l0nn5S_9vPXIEA-64PkowBwjHGC8Y35dcVuEhpr5lrSFI07-KaGb-u4g1jvxrnM41dHBbU0CjNjb1Y3Yx';
 const proxyUrl = "http://localhost:8000";
-const apiUrl = "https://api.yelp.com";
 
 function getRandomRestaurants(restaurants) {
   const choice1 = getRandomInt(restaurants.length);

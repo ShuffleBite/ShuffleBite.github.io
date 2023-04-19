@@ -15,8 +15,8 @@ if (final_choice3.length === 1)
 else
 {
     content.innerHTML += `Name: ${final_choice3[0].substring("name=".length)}<br>`;
-    content.innerHTML += `Location: ${final_choice3[1].substring(" location=".length)}<br>`;
-    content.innerHTML += `Phone: ${final_choice3[2].substring(" phone=".length)}<br>`;
+    content.innerHTML += `<br>Location: ${final_choice3[1].substring(" location=".length)}<br>`;
+    content.innerHTML += `<br>Phone: ${final_choice3[2].substring(" phone=".length)}`;
     container.append(content);
     deleteCookie();
 }
