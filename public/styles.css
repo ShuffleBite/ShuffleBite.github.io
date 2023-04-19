@@ -65,6 +65,10 @@ img {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+#container {
+  color: #5f471f;
+}
+
 #title {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 3rem;
